@@ -1,0 +1,6 @@
+{
+  "typescript.format.enable": false,
+  "vsintellicode.typescript.completionsEnabled": false,
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+  "flow.showUncovered": true
+}

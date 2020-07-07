@@ -80,11 +80,11 @@ class ModalExample extends React.Component<{...}, $FlowFixMeState> {
     currentOrientation: 'unknown',
   };
 
-  _setModalVisible = (visible) => {
+  _setModalVisible = visible => {
     this.setState({modalVisible: visible});
   };
 
-  _setAnimationType = (type) => {
+  _setAnimationType = type => {
     this.setState({animationType: type});
   };
 
@@ -130,7 +130,7 @@ class ModalExample extends React.Component<{...}, $FlowFixMeState> {
               this.state.selectedSupportedOrientation
             ]
           }
-          onOrientationChange={(evt) =>
+          onOrientationChange={evt =>
             this.setState({currentOrientation: evt.nativeEvent.orientation})
           }>
           <View style={[styles.container, modalBackgroundStyle]}>
@@ -199,7 +199,7 @@ class ModalExample extends React.Component<{...}, $FlowFixMeState> {
           <Text style={styles.rowTitle}>Presentation style</Text>
           <Picker
             selectedValue={this.state.presentationStyle}
-            onValueChange={(presentationStyle) =>
+            onValueChange={presentationStyle =>
               this.setState({presentationStyle})
             }
             itemStyle={styles.pickerItem}>
